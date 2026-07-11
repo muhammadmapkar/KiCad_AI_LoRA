@@ -13,14 +13,17 @@ Early-stage. Currently just a seed dataset — no training/inference code yet.
 
 ```
 KiCad_AI_LoRA/
-└── datasets/
-    └── train.jsonl    chat-format fine-tuning examples (system/user/assistant turns)
+├── datasets/
+│   ├── train.jsonl    chat-format fine-tuning examples (system/user/assistant turns)
+│   └── val.jsonl      held-out chat-format examples for evaluation
+└── requirements.txt   training stack dependencies (unsloth, transformers, trl, peft,
+                       accelerate, bitsandbytes, datasets, torch)
 ```
 
 ## Dataset format
 
-`datasets/train.jsonl` is JSONL, one fine-tuning example per line, OpenAI chat
-fine-tuning format (`{"messages": [{"role": ..., "content": ...}, ...]}`).
+`datasets/train.jsonl` and `datasets/val.jsonl` are JSONL, one fine-tuning example per
+line, OpenAI chat fine-tuning format (`{"messages": [{"role": ..., "content": ...}, ...]}`).
 Each example currently has the same system prompt:
 
 > You are KiCad AI Console, an advanced PCB engineering AI specializing in mixed-signal
