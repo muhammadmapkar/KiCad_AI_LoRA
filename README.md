@@ -21,4 +21,21 @@ Domain focus: grounding, decoupling, stackup, DRC, thermal relief, signal integr
 - Training: Google Colab (T4 GPU)
 - Data format: JSONL, chat format (system/user/assistant turns)
 
-## Repo layout
+## Repo Layout
+
+```
+KiCad_AI_LoRA/
+├── src/            # dataset generation scripts
+│   ├── gen.py
+│   ├── expand.py
+│   └── split.py
+├── datasets/       # train/val JSONL (do not edit manually)
+│   ├── train.jsonl
+│   └── val.jsonl
+├── app/            # KiCad AI Console app (coming)
+├── docs/           # documentation
+├── tests/          # test suite (coming)
+├── .gitignore
+├── requirements.txt
+└── LICENSE
+```

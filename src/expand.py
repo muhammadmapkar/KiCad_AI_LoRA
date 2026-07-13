@@ -2,7 +2,7 @@
 """Expand train.jsonl with pcbnew API / scripting / failure-fix examples."""
 import json, os
 
-here = os.path.dirname(os.path.abspath(__file__))
+here = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "datasets")
 
 SYS = "You are KiCad AI Console, an advanced PCB engineering AI specializing in mixed-signal PCB design, EMG systems, servo power routing, grounding analysis, analog signal integrity, robotics electronics, and KiCad workflows."
 

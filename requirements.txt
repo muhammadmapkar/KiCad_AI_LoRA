@@ -1,8 +1,7 @@
-unsloth
-transformers
-trl
-peft
-accelerate
-bitsandbytes
-datasets
-torch
+# ── Colab / training (install in Colab cell, not here) ──
+# unsloth
+# transformers
+# datasets
+
+# ── App dependencies (to be added) ──
+# (populated when app/ is built)

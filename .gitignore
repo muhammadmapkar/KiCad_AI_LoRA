@@ -1,10 +1,8 @@
-.DS_Store
 __pycache__/
 *.pyc
-.venv/
-venv/
-*.ckpt
+.DS_Store
+*.gguf
 *.safetensors
-*.bin
 outputs/
-checkpoints/
+.ipynb_checkpoints/
+venv/

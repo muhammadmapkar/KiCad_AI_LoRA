@@ -4,7 +4,7 @@ import gen     # reuse pools + SYS from generator
 import expand  # reuse api/cli/batch/geometry pools
 
 random.seed(7)
-here = os.path.dirname(os.path.abspath(__file__))
+here = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "datasets")
 
 # Build assistant-text -> category map from the generator pools
 asst2cat = {}

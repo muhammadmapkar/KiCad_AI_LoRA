@@ -342,7 +342,7 @@ existing = [
      "This routing increases the risk of switching noise injection into sensitive EMG analog signals. Long parallel routing near servo power lines can introduce ADC instability and inaccurate EMG readings. Increase separation between analog and power traces, avoid parallel routing where possible, and maintain clean analog grounding practices."),
 ]
 
-outdir = os.path.dirname(os.path.abspath(__file__))
+outdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "datasets")
 
 if __name__ == "__main__":
     with open(os.path.join(outdir,"train.jsonl"),"w") as f:
